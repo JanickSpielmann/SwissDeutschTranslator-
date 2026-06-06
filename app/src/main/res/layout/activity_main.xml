@@ -76,13 +76,33 @@
             android:backgroundTint="#FFFFFF"
             android:layout_marginBottom="20dp" />
 
-        <Button
-            android:id="@+id/buttonTranslate"
-            style="@style/CustomButtonStyle"
+        <!-- Buttons nebeneinander -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button_translate"
-            android:layout_marginBottom="20dp" />
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/buttonTranslate"
+                style="@style/CustomButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/button_translate"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/buttonSpeak"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:background="@drawable/button_orange"
+                android:scaleType="fitCenter"
+                android:padding="8dp"
+                android:contentDescription="@string/button_speak" />
+        </LinearLayout>
 
         <!-- Ladeanimation -->
         <ProgressBar

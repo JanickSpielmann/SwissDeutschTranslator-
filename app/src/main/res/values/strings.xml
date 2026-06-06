@@ -3,7 +3,7 @@
 
     <!-- Header -->
     <string name="header_title">Schweizerdeutsch Übersetzer</string>
-    <string name="header_subtitle">Übersetze Hochdeutsch in Zürichdeutsch mit OpenAI</string>
+    <string name="header_subtitle">Übersetze Hochdeutsch in Schweizerdeutsch mit OpenAI</string>
     <string name="header_school">Berner Fachhochschule</string>
     <string name="logo_description">BFH Logo</string>
 
@@ -29,4 +29,9 @@
     <string name="back">Zurück</string>
     <string name="api_key_saved">API-Key gespeichert!</string>
     <string name="current_key_label">Aktueller Key: </string>
+
+    <!-- Sprach-zu-Text -->
+    <string name="button_speak">Sprechen</string>
+    <string name="permission_denied">Mikrofon-Berechtigung verweigert</string>
+    <string name="listening">Ich höre zu...</string>
 </resources>
