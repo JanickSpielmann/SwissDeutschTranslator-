@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">SwissDeutschTranslator</string>
+    <string name="app_name">SwissDeutsch Translator</string>
+
+    <!-- Header -->
+    <string name="header_title">Schweizerdeutsch Übersetzer</string>
+    <string name="header_subtitle">Übersetze Hochdeutsch in Zürichdeutsch mit OpenAI</string>
+    <string name="header_school">Berner Fachhochschule</string>
+    <string name="logo_description">BFH Logo</string>
+
+    <!-- MainActivity -->
+    <string name="hint_input">Satz auf Deutsch eingeben...</string>
+    <string name="button_translate">Übersetze</string>
+    <string name="label_result">Übersetzung auf Schweizerdeutsch:</string>
+    <string name="menu_settings">Einstellungen</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_title">Einstellungen</string>
+    <string name="pref_api_key_title">OpenAI API-Key</string>
+    <string name="pref_api_key_summary">Gib deinen OpenAI API-Key ein</string>
+    <string name="pref_api_key_key">openai_api_key</string>
+
+    <!-- Fehlermeldungen -->
+    <string name="error_no_api_key">Kein API-Key gesetzt. Bitte in Einstellungen eingeben.</string>
+    <string name="error_api_call">Fehler beim API-Aufruf. Bitte erneut versuchen.</string>
+    <string name="error_empty_input">Bitte einen Satz eingeben.</string>
+
+    <!-- Buttons für SettingsActivity -->
+    <string name="save_api_key">API-Key speichern</string>
+    <string name="back">Zurück</string>
+    <string name="api_key_saved">API-Key gespeichert!</string>
+    <string name="current_key_label">Aktueller Key: </string>
 </resources>
