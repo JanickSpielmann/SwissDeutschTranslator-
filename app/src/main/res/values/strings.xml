@@ -8,7 +8,7 @@
     <string name="logo_description">BFH Logo</string>
 
     <!-- MainActivity -->
-    <string name="hint_input">Satz auf Deutsch eingeben...</string>
+    <string name="hint_input">Satz auf Deutsch eingeben…</string>
     <string name="button_translate">Übersetze</string>
     <string name="label_result">Übersetzung auf Schweizerdeutsch:</string>
     <string name="menu_settings">Einstellungen</string>
@@ -33,5 +33,17 @@
     <!-- Sprach-zu-Text -->
     <string name="button_speak">Sprechen</string>
     <string name="permission_denied">Mikrofon-Berechtigung verweigert</string>
-    <string name="listening">Ich höre zu...</string>
+    <string name="listening">Ich höre zu…</string>
+
+    <!-- Sprach-zu-Text Fehlermeldungen -->
+    <string name="error_speech_audio">Audio Fehler</string>
+    <string name="error_speech_client">Client Fehler</string>
+    <string name="error_speech_permission">Keine Berechtigung</string>
+    <string name="error_speech_network">Netzwerk Fehler</string>
+    <string name="error_speech_network_timeout">Netzwerk Timeout</string>
+    <string name="error_speech_no_match">Keine Übereinstimmung</string>
+    <string name="error_speech_recognizer_busy">Recognizer beschäftigt</string>
+    <string name="error_speech_server">Server Fehler</string>
+    <string name="error_speech_timeout">Sprache Timeout</string>
+    <string name="error_speech_unknown">Unbekannter Fehler: %1$d</string>
 </resources>

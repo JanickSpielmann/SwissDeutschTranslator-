@@ -83,16 +83,26 @@ public class MainActivity extends AppCompatActivity {
             public void onError(int error) {
                 String errorMessage;
                 switch (error) {
-                    case SpeechRecognizer.ERROR_AUDIO: errorMessage = "Audio Fehler"; break;
-                    case SpeechRecognizer.ERROR_CLIENT: errorMessage = "Client Fehler"; break;
-                    case SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS: errorMessage = "Keine Berechtigung"; break;
-                    case SpeechRecognizer.ERROR_NETWORK: errorMessage = "Netzwerk Fehler"; break;
-                    case SpeechRecognizer.ERROR_NETWORK_TIMEOUT: errorMessage = "Netzwerk Timeout"; break;
-                    case SpeechRecognizer.ERROR_NO_MATCH: errorMessage = "Keine Übereinstimmung"; break;
-                    case SpeechRecognizer.ERROR_RECOGNIZER_BUSY: errorMessage = "Recognizer beschäftigt"; break;
-                    case SpeechRecognizer.ERROR_SERVER: errorMessage = "Server Fehler"; break;
-                    case SpeechRecognizer.ERROR_SPEECH_TIMEOUT: errorMessage = "Sprache Timeout"; break;
-                    default: errorMessage = "Unbekannter Fehler: " + error; break;
+                    case SpeechRecognizer.ERROR_AUDIO:
+                        errorMessage = getString(R.string.error_speech_audio); break;
+                    case SpeechRecognizer.ERROR_CLIENT:
+                        errorMessage = getString(R.string.error_speech_client); break;
+                    case SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS:
+                        errorMessage = getString(R.string.error_speech_permission); break;
+                    case SpeechRecognizer.ERROR_NETWORK:
+                        errorMessage = getString(R.string.error_speech_network); break;
+                    case SpeechRecognizer.ERROR_NETWORK_TIMEOUT:
+                        errorMessage = getString(R.string.error_speech_network_timeout); break;
+                    case SpeechRecognizer.ERROR_NO_MATCH:
+                        errorMessage = getString(R.string.error_speech_no_match); break;
+                    case SpeechRecognizer.ERROR_RECOGNIZER_BUSY:
+                        errorMessage = getString(R.string.error_speech_recognizer_busy); break;
+                    case SpeechRecognizer.ERROR_SERVER:
+                        errorMessage = getString(R.string.error_speech_server); break;
+                    case SpeechRecognizer.ERROR_SPEECH_TIMEOUT:
+                        errorMessage = getString(R.string.error_speech_timeout); break;
+                    default:
+                        errorMessage = getString(R.string.error_speech_unknown, error); break;
                 }
                 Toast.makeText(MainActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
                 buttonSpeak.setEnabled(true);
